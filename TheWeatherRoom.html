@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="Favicon/FaviconPink.png" type="image/x-icon">
+    <title>The Weather Room</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-container">
+            <h1 class="header">The Weather Room</h1>
+            <h2 class="subheader">Artistic Direction, Creative Coding, Cinematography</h2>
+            <p class="bodytext">The Weather Room is a dynamic installation where viewers influence the ambience of a room with their presence. Projected light changes colour from dark blue tones to warm orange hues based on the sound frequencies in the room. There are recorded clips of people’s interactions in public spaces playing in the background, creating a visual representation of the collective human experience with the environment. This fosters a deep reflection of our relationship with nature.</p>
+        </div>
+        <div class="image-container-wrapper">
+            <div class="image-container">
+                <div class="arrow left-arrow"></div>
+                <img src="TheWeatherRoom/PNGs/1.png" alt="Image 1">
+                <img src="TheWeatherRoom/PNGs/12.png" alt="Image 2">
+                <img src="TheWeatherRoom/PNGs/13.png" alt="Image 3">
+                <img src="TheWeatherRoom/PNGs/14.png" alt="Image 4">
+                <img src="TheWeatherRoom/PNGs/15.png" alt="Image 5">
+                <img src="TheWeatherRoom/PNGs/16.png" id="image52" alt="Image 5">
+                <div class="arrow right-arrow"></div>
+            </div>
+        </div>
+    
+        <script>
+            document.getElementById("image52").addEventListener("click", function() {
+                window.open("TheWeatherRoomVideo.html", "_blank");
+            });
+        </script>
+</body>
+
+</html>

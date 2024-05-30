@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="Favicon/FaviconPink.png" type="image/x-icon">
+    <title>Daddy Loves You</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-container">
+            <h1 class="header">Daddy Loves You</h1>
+            <h2 class="subheader">3D Modeling, Animation</h2>
+            <p class="bodytext">Daddy Loves You is an animated 3D model inspired by Paul Yore’s work. It invites viewers into a world where everything is seemingly perfect, prompting reflection on the stark contrasts between this idealised reality and the pressing issues in our world, such as social inequality, environmental degradation and media influence.</p>
+        </div>
+        <div class="image-container-wrapper">
+            <div class="image-container">
+                <div class="arrow left-arrow"></div>
+                <img src="DaddyLovesYou/PNG'S/Render 1.png" alt="Image 1">
+                <img src="DaddyLovesYou/PNG'S/Render 2.png" alt="Image 2">
+                <img src="DaddyLovesYou/PNG'S/Render 3.png" alt="Image 3">
+                <img src="DaddyLovesYou/PNG'S/Render 4.png" alt="Image 4">
+                <img id="image5"src="DaddyLovesYou/PNG'S/Render 5.png" alt="Image 5">
+                <div class="arrow right-arrow"></div>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("image5").addEventListener("click", function() {
+                window.open("DaddyLovesYouVideo.html", "_blank");
+            });
+        </script>
+
+</body>
+
+</html>
