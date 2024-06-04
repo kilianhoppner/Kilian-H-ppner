@@ -1,44 +1,38 @@
-        // Array of colors
-        const colors = [
-            'rgb(244, 24, 243)', // Existing color
-            'rgb(238, 108, 0)', // New color
-            'rgb(0, 211, 18)',  // New color
-            'rgb(255, 246, 0)'  // New color
-        ];
+// Array of colors
+const colors = [
+    'rgb(244, 24, 243)', // Existing color
+    'rgb(238, 108, 0)', // New color
+    'rgb(0, 211, 18)',  // New color
+    'rgb(255, 246, 0)'  // New color
+];
 
-        // Function to set a random background color for the body
-        function setRandomBackgroundColor() {
-            const randomColor = colors[Math.floor(Math.random() * colors.length)];
-            document.body.style.backgroundColor = randomColor;
-        }
+// Function to set a random background color for the body
+function setRandomBackgroundColor() {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.body.style.backgroundColor = randomColor;
+}
 
-        // Function to set a random background color for a button
-        function setRandomButtonBackgroundColor(buttonClass) {
-            const randomColor = colors[Math.floor(Math.random() * colors.length)];
-            const button = document.querySelector(buttonClass);
-            button.style.backgroundColor = randomColor;
-        }
+// Function to set a random background color for a button
+function setRandomButtonBackgroundColor(buttonClass) {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    const button = document.querySelector(buttonClass);
+    button.style.backgroundColor = randomColor;
+}
 
-        // Set the background color when the page loads
-        window.onload = function() {
-            setRandomBackgroundColor();
-            setRandomButtonBackgroundColor('.large-button');
-            setRandomButtonBackgroundColor('.large-button2');
-            setRandomButtonBackgroundColor('.large-button3');
-            setRandomButtonBackgroundColor('.large-button4');
-            setRandomButtonBackgroundColor('.large-button5');
-            setRandomButtonBackgroundColor('.large-button6');
-            setRandomButtonBackgroundColor('.large-button6');
-            setRandomButtonBackgroundColor('.large-button7');
-        };
-
-
-
-
-
+// Set the background color when the page loads
+window.onload = function() {
+    setRandomBackgroundColor();
+    setRandomButtonBackgroundColor('.large-button');
+    setRandomButtonBackgroundColor('.large-button2');
+    setRandomButtonBackgroundColor('.large-button3');
+    setRandomButtonBackgroundColor('.large-button4');
+    setRandomButtonBackgroundColor('.large-button5');
+    setRandomButtonBackgroundColor('.large-button6');
+    setRandomButtonBackgroundColor('.large-button6');
+    setRandomButtonBackgroundColor('.large-button7');
+};
 
 // Arrows Scrolling Images
-
 document.addEventListener('DOMContentLoaded', function () {
     const imageContainerWrapper = document.querySelector('.image-container-wrapper');
     const leftArrow = document.querySelector('.left-arrow');
@@ -121,27 +115,4 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     }
-
-    // Function to open video in a new tab when image is clicked
-    function openVideo() {
-        const videoUrl = document.querySelector('.image-container-wrapper img').parentNode.getAttribute('href');
-        window.open(videoUrl, '_blank');
-    }
-
-    // Add click event listener to the image
-    document.querySelector('.image-container-wrapper img').addEventListener('click', openVideo);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
