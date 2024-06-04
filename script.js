@@ -6,6 +6,19 @@ const colors = [
     'rgb(255, 246, 0)'  // New color
 ];
 
+// Function to preload colors
+function preloadColors() {
+    colors.forEach(color => {
+        const img = new Image();
+        img.src = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+        img.style.display = 'none';
+        img.onload = function() {
+            // Color loaded
+        };
+        document.body.appendChild(img);
+    });
+}
+
 // Function to set a random background color for the body
 function setRandomBackgroundColor() {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
@@ -21,6 +34,7 @@ function setRandomButtonBackgroundColor(buttonClass) {
 
 // Set the background color when the page loads
 window.onload = function() {
+    preloadColors();
     setRandomBackgroundColor();
     setRandomButtonBackgroundColor('.large-button');
     setRandomButtonBackgroundColor('.large-button2');
