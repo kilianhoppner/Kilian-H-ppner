@@ -54,6 +54,7 @@
 body {
     height: 100vh;
     font-family: 'ocra';
+    cursor: url('Cursor/CursorHand.png'), auto;
 }
 
 .text-container {
@@ -147,6 +148,7 @@ p {
     position: relative; /* Position the container relative to the body */
     width: 100%; /* Take up the full width of the page */
     text-align: left;
+    cursor: url('Cursor/CursorHand.png'), auto;
     
 }
 
@@ -159,6 +161,7 @@ p {
     font-size: 3em;
     padding-top: 0.7%;
     padding-left: 0.6%;
+    cursor: url('Cursor/CursorHand.png'), auto;
 }
 
 .large-button2 {
@@ -168,6 +171,7 @@ p {
     font-size: 3em;
     padding-top: 0.7%;
     padding-left: 0.6%;
+    cursor: url('Cursor/CursorHand.png'), auto;
 }
 
 .large-button3 {
@@ -177,6 +181,7 @@ p {
     font-size: 3em;
     padding-top: 0.7%;
     padding-left: 0.6%;
+    cursor: url('Cursor/CursorHand.png'), auto;
 }
 
 .large-button4 {
@@ -186,6 +191,7 @@ p {
     font-size: 3em;
     padding-top: 0.7%;
     padding-left: 0.6%;
+    cursor: url('Cursor/CursorHand.png'), auto;
 }
 
 .large-button5 {
@@ -195,6 +201,7 @@ p {
     font-size: 3em;
     padding-top: 0.7%;
     padding-left: 0.6%;
+    cursor: url('Cursor/CursorHand.png'), auto;
 }
 
 .large-button6 {
@@ -204,6 +211,7 @@ p {
     font-size: 3em;
     padding-top: 0.7%;
     padding-left: 0.6%;
+    cursor: url('Cursor/CursorHand.png'), auto;
 }
 
 .large-button7 {
@@ -213,6 +221,7 @@ p {
     font-size: 3em;
     padding-top: 0.7%;
     padding-left: 0.6%;
+    cursor: url('Cursor/CursorHand.png'), auto;
 }
 
 a {
@@ -273,12 +282,14 @@ a {
     padding:1.11%;
     box-sizing: border-box;
     align-items: flex-end;
+    cursor: url('Cursor/CursorHand.png'), auto;
 }
 
 .left-footer {
     font-size: 1.5em;
     color: #000;
     line-height: 1.12; 
+    
 }
 
 .right-footer {
