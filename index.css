@@ -3,7 +3,7 @@
     padding: 0;
     border: none;
     /* overflow: hidden; */
-    cursor: default;
+    cursor: url('Cursor/CursorHand.png'), auto;
 }
 
 
@@ -116,7 +116,6 @@ p {
     transform: translateY(-50%);
     width: 0;
     height: 0;
-    cursor: pointer;
     opacity: 0; /* Initial opacity set to 0 */
     transition: opacity 0.7s ease; /* Smooth transition for opacity */
 }
@@ -127,6 +126,7 @@ p {
     border-width: 18vw 9vw 18vw 0; /* Adjust these values to change the size of the arrow */
     border-color: transparent red transparent transparent;
     border-style: solid;
+    
     
 }
 
@@ -300,4 +300,31 @@ a {
 ::-moz-selection {
     background: red;
     color: white; /* Optional: change the text color when selected */
+}
+
+
+
+
+/* Custom cursor on video control buttons */
+
+#videoPlayer::-webkit-media-controls-play-button,
+#videoPlayer::-webkit-media-controls-pause-button,
+#videoPlayer::-webkit-media-controls-volume-slider,
+#videoPlayer::-webkit-media-controls-mute-button,
+#videoPlayer::-webkit-media-controls-timeline,
+#videoPlayer::-webkit-media-controls-current-time-display,
+#videoPlayer::-webkit-media-controls-time-remaining-display,
+#videoPlayer::-webkit-media-controls-seek-back-button,
+#videoPlayer::-webkit-media-controls-seek-forward-button,
+#videoPlayer::-webkit-media-controls-fullscreen-button,
+#videoPlayer::-webkit-media-controls-overflow-button {
+    cursor: url('Cursor/CursorHand.png'), auto !important;
+}
+
+
+
+/* Overflow: Hidden */
+
+.overflow-hidden {
+    overflow: hidden;
 }
