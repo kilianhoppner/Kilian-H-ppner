@@ -136,6 +136,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.body.style.cursor = "url('Cursor/CursorHand.png'), auto";
 
+window.addEventListener('load', function() {
+    var shouldApplyCustomCursor = localStorage.getItem('customCursor');
+    if (shouldApplyCustomCursor === 'true') {
+        document.body.style.cursor = 'url("Cursor/CursorHand.png"), auto';
+    }
+});
+
 window.addEventListener('unload', function() {
-    window.location.reload(true);
+    localStorage.setItem('customCursor', 'true');
 });
