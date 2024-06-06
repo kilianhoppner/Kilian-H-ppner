@@ -12,10 +12,6 @@
     src: url(Typeface/OCRA.otf);
 } 
 
-@font-face { 
-    font-family: 'ocrb'; 
-    src: url(Typeface/OCR-B.otf);
-} 
 
 .landingpage, .contact {
     width: 100vw;
@@ -338,4 +334,25 @@ a {
 
 .overflow-hidden {
     overflow: hidden;
+}
+
+
+/* Back Button */
+
+.back-button {
+    border: 0.1em solid black;
+    border-radius: 1.2em;
+    padding: 0.32%;
+    background-color: transparent;
+    color: black;
+    font-size: 1em;
+    position: absolute;
+    top: 2%;
+    right: 1.2%;
+    font-family: ocra;
+}
+
+.back-button:hover {
+    color: red;
+    border-color: red;
 }
