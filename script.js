@@ -135,3 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // Custom Cursor:
 
 document.body.style.cursor = "url('Cursor/CursorHand.png'), auto";
+
+window.addEventListener('unload', function() {
+    window.location.reload(true);
+});
