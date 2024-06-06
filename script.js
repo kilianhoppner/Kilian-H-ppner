@@ -130,3 +130,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+
+// Custom Cursor:
+
+document.body.style.cursor = "url('Cursor/CursorHand.png'), auto";
