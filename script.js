@@ -134,15 +134,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Custom Cursor:
 
-document.body.style.cursor = "url('Cursor/CursorHand.png'), auto";
-
-window.addEventListener('load', function() {
-    var shouldApplyCustomCursor = localStorage.getItem('customCursor');
-    if (shouldApplyCustomCursor === 'true') {
-        document.body.style.cursor = 'url("Cursor/CursorHand.png"), auto';
-    }
-});
-
-window.addEventListener('unload', function() {
+document.addEventListener('DOMContentLoaded', function() {
+    var cursorUrl = 'Cursor/CursorHand.png';
+    
+    // Set cursor on page load
+    document.body.style.cursor = `url(${cursorUrl}), auto`;
+    
+    // Save cursor preference in local storage
     localStorage.setItem('customCursor', 'true');
+    
+    // Apply cursor again on visibility change
+    document.addEventListener('visibilitychange', function() {
+        if (document.visibilityState === 'visible') {
+            var shouldApplyCustomCursor = localStorage.getItem('customCursor');
+            if (shouldApplyCustomCursor === 'true') {
+                document.body.style.cursor = `url(${cursorUrl}), auto`;
+            }
+        }
+    });
 });
