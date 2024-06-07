@@ -134,21 +134,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Custom Cursor:
 
-// Function to reload CSS
-function reloadCSS() {
-    var links = document.getElementsByTagName("link");
-    for (var i = 0; i < links.length; i++) {
-        var link = links[i];
-        if (link.rel === "stylesheet") {
-            link.href += "?reload=" + new Date().getTime();
-        }
-    }
-}
-
-// Apply custom cursor and reload CSS on page visibility change
 document.addEventListener('visibilitychange', function() {
     if (document.visibilityState === 'visible') {
-        document.body.style.cursor = 'url("Cursor/CursorHand.png"), auto';
-        reloadCSS();
+        applyCustomCursor();
     }
 });
+
+window.addEventListener('focus', function() {
+    applyCustomCursor();
+});
+
+function applyCustomCursor() {
+    var cursorUrl = 'Cursor/CursorHand.png';
+    document.body.style.cursor = `url(${cursorUrl}), auto`;
+}
+
+function applyCustomCursor() {
+    console.log("Applying custom cursor");
+    var cursorUrl = 'Cursor/CursorHand.png';
+    document.body.style.cursor = `url(${cursorUrl}), auto`;
+}
