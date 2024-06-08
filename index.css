@@ -157,7 +157,6 @@ p {
     font-size: 3em;
     padding-top: 0.7%;
     padding-left: 0.6%;
-    cursor: url('Cursor/CursorHand.png'), auto;
 }
 
 .large-button2 {
@@ -167,7 +166,6 @@ p {
     font-size: 3em;
     padding-top: 0.7%;
     padding-left: 0.6%;
-    cursor: url('Cursor/CursorHand.png'), auto;
 }
 
 .large-button3 {
@@ -177,7 +175,6 @@ p {
     font-size: 3em;
     padding-top: 0.7%;
     padding-left: 0.6%;
-    cursor: url('Cursor/CursorHand.png'), auto;
 }
 
 .large-button4 {
@@ -187,7 +184,6 @@ p {
     font-size: 3em;
     padding-top: 0.7%;
     padding-left: 0.6%;
-    cursor: url('Cursor/CursorHand.png'), auto;
 }
 
 .large-button5 {
@@ -197,7 +193,6 @@ p {
     font-size: 3em;
     padding-top: 0.7%;
     padding-left: 0.6%;
-    cursor: url('Cursor/CursorHand.png'), auto;
 }
 
 .large-button6 {
@@ -207,7 +202,6 @@ p {
     font-size: 3em;
     padding-top: 0.7%;
     padding-left: 0.6%;
-    cursor: url('Cursor/CursorHand.png'), auto;
 }
 
 .large-button7 {
@@ -217,7 +211,6 @@ p {
     font-size: 3em;
     padding-top: 0.7%;
     padding-left: 0.6%;
-    cursor: url('Cursor/CursorHand.png'), auto;
 }
 
 a {
@@ -254,7 +247,7 @@ a {
 
 .hyperlink {
     color: initial; /* Initial color */
-    transition: color 0.4s ease; /* Smooth transition */
+    /* transition: color 0.4s ease;  */
 }
 
 .hyperlink:hover {
@@ -350,6 +343,7 @@ a {
     top: 0.87em;
     right: 0.87em;
     font-family: ocra;
+    
 }
 
 .back-button:hover {
