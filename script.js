@@ -134,23 +134,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Custom Cursor:
 
-document.addEventListener('visibilitychange', function() {
-    if (document.visibilityState === 'visible') {
-        applyCustomCursor();
-    }
-});
+// document.addEventListener('visibilitychange', function() {
+//     if (document.visibilityState === 'visible') {
+//         applyCustomCursor();
+//     }
+// });
 
-window.addEventListener('focus', function() {
-    applyCustomCursor();
-});
+// window.addEventListener('focus', function() {
+//     applyCustomCursor();
+// });
 
-function applyCustomCursor() {
-    var cursorUrl = 'Cursor/CursorHand.png';
-    document.body.style.cursor = `url(${cursorUrl}), auto`;
-}
-
-function applyCustomCursor() {
-    console.log("Applying custom cursor");
-    var cursorUrl = 'Cursor/CursorHand.png';
-    document.body.style.cursor = `url(${cursorUrl}), auto`;
-}
+// function applyCustomCursor() {
+//     var cursorUrl = 'Cursor/CursorHand.png';
+//     document.body.style.cursor = `url(${cursorUrl}), auto`;
+// }
