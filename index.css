@@ -8,9 +8,15 @@
 
 
 @font-face { 
-    font-family: 'ocra'; 
-    src: url(Typeface/OCRA.otf);
+    font-family: 'Polka'; 
+    src: url(Typeface/Polka.otf);
 } 
+
+@font-face { 
+    font-family: 'Caslon'; 
+    src: url(Typeface/Caslon.otf);
+} 
+
 
 
 .landingpage, .contact {
@@ -49,7 +55,7 @@
 
 body {
     height: 100vh;
-    font-family: 'ocra';
+    font-family: 'Polka';
     cursor: url('Cursor/CursorHand.png'), auto;
 }
 
@@ -65,11 +71,13 @@ h1 {
 
 h2 {
     font-size: 1.4em;
+    font-family: Caslon;
 
 }
 
 p {
     font-size: 1em;
+    font-family: Caslon;
 
 }
 
@@ -272,6 +280,7 @@ a {
     box-sizing: border-box;
     align-items: flex-end;
     cursor: url('Cursor/CursorHand.png'), auto;
+    font-family: Caslon;
 }
 
 .left-footer {
@@ -335,15 +344,14 @@ a {
 .back-button {
     border: 0.1em solid black;
     border-radius: 1.2em;
-    padding: 0.32%;
+    padding: 0.34%;
     background-color: transparent;
     color: black;
     font-size: 1em;
     position: absolute;
     top: 0.87em;
     right: 0.87em;
-    font-family: ocra;
-    
+    font-family: Caslon;
 }
 
 .back-button:hover {
